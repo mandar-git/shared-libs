@@ -1,8 +1,8 @@
 def call(String repoUrl) {
   pipeline {
        agent any
-       tools {
-           maven 'Maven 3.6.3'
+       environment{
+            mvnHome = tool name: 'maven-3.8.5', type: 'maven'
        }
        stages {
            stage("Tools initialization") {
