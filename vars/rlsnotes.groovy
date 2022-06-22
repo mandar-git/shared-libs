@@ -19,5 +19,6 @@ def call(Map config=[:]){
     		{
     			writer.writeLine('\t' + file.name + '\t' + file.length());
     		}
+         }
     }
 }
